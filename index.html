@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <title>Bullish App</title>
+    
 </head>
 <body>
     <div>
         <h1>Bullish App</h1>
+        
         <div id="new-stock-container">
             <form id="new-stock-form" class="input-class">
-                <label>Name:</label><input type="text" name="stock-name" id="new-stock-name"/><br>
+                <label>Company Name:</label><input type="text" name="stock-name" id="new-stock-name"/><br>
                 <label>Price:</label><input type="text" name="stock-price" id="new-stock-price"/><br>
-                <label>Category:</label><input type="text" name="stock-category" id="new-stock-category"/><br>
+                <label>Categrory:</label><input type="text" name="stock-category" id="new-stock-category"/><br>
                 
                 <input style="width: 60px" type="submit" value="Submit"/>
             </form>
-            <button type="name-button" id="name-button">Sort By Name</button>
+            
         </div>
     <div id="stocks-content">
         <ul id="stocks-container">
@@ -30,12 +30,12 @@
     </div>
 
 
-    </div>
-    <script src="src/components/stock.js"></script>
-    <script src="src/components/stocks.js"></script>
-    <script src="src/components/app.js"></script>
-    <script src="src/adapters/CommentsAdapter.js"></script>
-    <script src="src/adapters/StocksAdapter.js"></script>
+</div>
+    <script src="src/fetch/StocksFetch.js"></script>
+    <script src="src/fetch/CommentsFetch.js"></script>
+    <script src="src/classes/app.js"></script>
+    <script src="src/classes/stock.js"></script>
+    <script src="src/classes/stocks.js"></script>
     <script src="src/index.js"></script>
 </body>
 </html>
